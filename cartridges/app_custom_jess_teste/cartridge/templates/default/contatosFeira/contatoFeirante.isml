@@ -1,0 +1,99 @@
+<isdecorate template="/common/layout/page">
+<div class="row justify-content-center" style="margin-top: 20px">
+    <h2>${Resource.msg('profile.title','form',null)}</h2>
+</div>
+<div class="row justify-content-center" style="margin-bottom: 20px">
+    <h5>${Resource.msg('profile.subtitle','form',null)}</h5>
+</div>
+<script>
+    var assets = require('*/cartridge/scripts/assets');
+</script>
+<form
+    action="${pdict.actionUrl}"
+    class="feirante-form" 
+    method="POST"
+    <isprint value="${pdict.meuForm.attributes}" encoding="off" />>
+    <iscomment>"meuForm" corresponde a var meuForm = server.forms.getForm('feirante'), vinda do CONTROLLER</iscomment>
+    <div class="row justify-content-center"> <iscomment>Nome</iscomment>
+        <div class="col-6">
+            <div class="form-group
+                ${pdict.meuForm.nome.mandatory === true ? 'required' : ''}">
+                <label class="form-control-label" for="nome">
+                    ${Resource.msg('profile.nome','form',null)}
+                </label>
+                <input type="text" class="form-control" id="nome"
+                    <isprint value="${pdict.meuForm.nome.attributes}" encoding="off" />
+                <div class="invalid-feedback"></div>
+            </div>  
+        </div>
+    </div>
+        
+    <div class="row justify-content-center"> <iscomment>E-mail</iscomment>
+        <div class="col-6">
+            <div class="form-group
+                ${pdict.meuForm.email.mandatory === true ? 'required' : ''}
+                ${pdict.meuForm.email.htmlName}" >
+                <label class="form-control-label" for="email">
+                    ${Resource.msg('profile.email','form',null)}
+                </label>
+                <input type="email" class="form-control email" id="email"
+                <isprint value="${pdict.meuForm.email.attributes}" encoding="off" />
+                <div class="invalid-feedback" id="emailInvalidMessage"></div>
+            </div>
+        </div>  
+    </div>
+
+    <div class="row justify-content-center"> <iscomment>Telefone</iscomment>
+        <div class="col-6">
+            <div class="form-group
+                ${pdict.meuForm.phone.mandatory === true ? 'required' : ''}">
+                <label class="form-control-label" for="phone">
+                    ${Resource.msg('profile.phone','form',null)}
+                </label>
+                <input type="tel" class="form-control" id="phone"
+                    <isprint value="${pdict.meuForm.phone.attributes}" encoding="off" />
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center"> <iscomment>Cidade</iscomment>
+        <div class="col-6">
+            <div class="form-group
+                ${pdict.meuForm.cidade.mandatory === true ? 'required' : ''}">
+                <label class="form-control-label" for="cidade">
+                    ${Resource.msg('profile.cidade','form',null)}
+                </label>
+                <input type="text" class="form-control" id="cidade"
+                    <isprint value="${pdict.meuForm.cidade.attributes}" encoding="off" />
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <div class="form-group
+                ${pdict.meuForm.estado.mandatory === true ? 'required' : ''}">
+                <label class="form-control-label" for="estado">
+                    ${Resource.msg('profile.estado','form',null)}
+                </label>
+                <input type="text" class="form-control" id="estado"
+                    <isprint value="${pdict.meuForm.estado.attributes}" encoding="off" />
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="row justify-content-center" style="margin-top: 20px; margin-bottom: 20px">
+        <div class="btn-group">
+            <div class="button" style="margin-right: 10px">
+                <button type="submit" name="save" class="btn btn-save btn-block btn-primary">${Resource.msg('button.save','form',null)}</button>
+            </div>
+            <div class="button">
+                <button type="reset" name="reset" class="btn btn-reset btn-block btn-primary">${Resource.msg('button.reset','form',null)}</button>
+            </div>
+        </div>
+    </div>
+</form>
+</isdecorate>

@@ -1,0 +1,8 @@
+<isdecorate template="/common/layout/page">
+<div class="row justify-content-center" style="margin-top: 20px">
+    <h2>${Resource.msg('profile.msgSucesso','form',null)}</h2>
+</div>
+<div class="row justify-content-center" style="margin-bottom: 280px">
+    <h5>${Resource.msg('profile.subtituloMsg','form',null)}</h5>
+</div>
+</isdecorate>

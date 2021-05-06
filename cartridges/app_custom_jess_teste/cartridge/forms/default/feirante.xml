@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<form xmlns="http://www.demandware.com/xml/form/2008-04-19">
+
+    <!-- Nome -->
+    <field formid="nome" label="profile.nome" type="string" mandatory="true" binding="nome"
+           max-length="50" missing-error="error.card.info.missing.nome"/>
+
+    <!-- E-mail -->
+    <field formid="email" label="profile.email" type="string" mandatory="true" binding="email"
+           max-length="50" regexp="^[\w.%+-]+@[\w.-]+\.[\w]{2,6}$" missing-error="error.card.info.missing.email" />
+
+    <!-- Telefone -->
+    <field formid="phone" label="profile.phone" type="number" mandatory="true" binding="phone" 
+       min-length="10" max-length="12" missing-error="error.card.info.missing.phone" range-error="error.message.between10and12" />
+
+    <!-- Cidade -->
+    <field formid="cidade" label="profile.cidade" type="string" mandatory="true" binding="cidade"
+           max-length="50" missing-error="error.card.info.missing.cidade"/>
+
+     <!-- Estado -->
+     <field formid="estado" label="profile.estado" type="string" mandatory="true" binding="estado"
+           max-length="50" missing-error="error.card.info.missing.estado"/>
+</form>
