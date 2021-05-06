@@ -1,5 +1,5 @@
-Desafio Individual SalesForce - Gama Academy
-Projeto desenvolvido por Jessica RF
-Rio de Janeiro/RJ - Brasil
+<p>Desafio Individual SalesForce - Gama Academy</p>
+<p>Projeto desenvolvido por Jessica RF</p>
+<p>Rio de Janeiro/RJ - Brasil</p>
 
-05/05/2021
+<p>05/05/2021</p>
