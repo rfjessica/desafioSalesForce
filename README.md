@@ -1,4 +1,4 @@
-<p>Desafio Individual SalesForce - Gama Academy</p>
+<p>Desafio Individual SalesForce</p>
 <p>Projeto desenvolvido por Jessica RF</p>
 <p>Rio de Janeiro/RJ - Brasil</p>
 
